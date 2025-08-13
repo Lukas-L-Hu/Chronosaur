@@ -4,16 +4,17 @@
 #include <string>
 #include <chrono>
 
-class ChronoTimer {
-    public:
-        ChronoTimer(const std::string& name);
-        ~ChronoTimer();
+class ChronoTimer
+{
+public:
+    ChronoTimer(const std::string &name);
+    ~ChronoTimer();
 
-    private:
-        std::string name;
-        std::chrono::high_resolution_clock::time_point startTime;
+private:
+    std::string name;
+    std::chrono::high_resolution_clock::time_point startTime;
 };
 
-#define CHRONOTIMER_FUNCTION() CHRONOTimer timer(__FUNCTION__)
+#define CHRONOTIMER_FUNCTION() ChronoTimer timer(__FUNCTION__)
 
 #endif
