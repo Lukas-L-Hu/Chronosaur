@@ -1,4 +1,4 @@
-#include "ChronoTimer.h"
+#include "../include/ChronoTimer.h"
 #include <iostream>
 
 ChronoTimer::ChronoTimer(const std::string &name) : name(name)

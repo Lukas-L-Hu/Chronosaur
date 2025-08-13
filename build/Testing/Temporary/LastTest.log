@@ -1,0 +1,28 @@
+Start testing: Aug 12 21:48 Pacific Daylight Time
+----------------------------------------------------------
+1/1 Testing: complexity_test
+1/1 Test: complexity_test
+Command: "C:/Users/lukas/Documents/Projects/Chronosaur/build/test_complexity.exe"
+Directory: C:/Users/lukas/Documents/Projects/Chronosaur/build
+"complexity_test" start time: Aug 12 21:48 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Function [testSort] took 24 us
+Function [testSort] took 46 us
+Function [testSort] took 69 us
+Function [testSort] took 65 us
+Function [testSort] took 92 us
+Function [testSort] took 155 us
+Function [testSort] took 234 us
+Function [testSort] took 210 us
+Function [testSort] took 283 us
+Function [testSort] took 267 us
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"complexity_test" end time: Aug 12 21:48 Pacific Daylight Time
+"complexity_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 12 21:48 Pacific Daylight Time

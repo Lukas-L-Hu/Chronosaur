@@ -76,30 +76,30 @@ CMakeFiles/chronosaur.dir/examples/main.cpp.obj: CMakeFiles/chronosaur.dir/inclu
 CMakeFiles/chronosaur.dir/examples/main.cpp.obj: C:/Users/lukas/Documents/Projects/Chronosaur/examples/main.cpp
 CMakeFiles/chronosaur.dir/examples/main.cpp.obj: CMakeFiles/chronosaur.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Documents\Projects\Chronosaur\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chronosaur.dir/examples/main.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chronosaur.dir/examples/main.cpp.obj -MF CMakeFiles\chronosaur.dir\examples\main.cpp.obj.d -o CMakeFiles\chronosaur.dir\examples\main.cpp.obj -c C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chronosaur.dir/examples/main.cpp.obj -MF CMakeFiles\chronosaur.dir\examples\main.cpp.obj.d -o CMakeFiles\chronosaur.dir\examples\main.cpp.obj -c C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp
 
 CMakeFiles/chronosaur.dir/examples/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chronosaur.dir/examples/main.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp > CMakeFiles\chronosaur.dir\examples\main.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp > CMakeFiles\chronosaur.dir\examples\main.cpp.i
 
 CMakeFiles/chronosaur.dir/examples/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chronosaur.dir/examples/main.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp -o CMakeFiles\chronosaur.dir\examples\main.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Documents\Projects\Chronosaur\examples\main.cpp -o CMakeFiles\chronosaur.dir\examples\main.cpp.s
 
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj: CMakeFiles/chronosaur.dir/flags.make
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj: CMakeFiles/chronosaur.dir/includes_CXX.rsp
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj: C:/Users/lukas/Documents/Projects/Chronosaur/src/ChronoTimer.cpp
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj: CMakeFiles/chronosaur.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Documents\Projects\Chronosaur\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj -MF CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.obj.d -o CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.obj -c C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj -MF CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.obj.d -o CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.obj -c C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp
 
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp > CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp > CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.i
 
 CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp -o CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Documents\Projects\Chronosaur\src\ChronoTimer.cpp -o CMakeFiles\chronosaur.dir\src\ChronoTimer.cpp.s
 
 # Object files for target chronosaur
 chronosaur_OBJECTS = \

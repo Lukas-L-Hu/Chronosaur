@@ -17,4 +17,6 @@ private:
 
 #define CHRONOTIMER_FUNCTION() ChronoTimer timer(__FUNCTION__)
 
+#define CHRONOTIMER_SCOPE(name) ChronoTimer timer(name)
+
 #endif

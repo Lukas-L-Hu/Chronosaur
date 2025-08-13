@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = C:\Users\lukas\Documents\Projects\Chronosaur\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\CMake\bin\ctest.exe" $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -128,6 +138,19 @@ chronosaur/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chronosaur.dir\build.make CMakeFiles/chronosaur.dir/build
 .PHONY : chronosaur/fast
 
+#=============================================================================
+# Target rules for targets named test_complexity
+
+# Build rule for target.
+test_complexity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_complexity
+.PHONY : test_complexity
+
+# fast build rule for target.
+test_complexity/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/build
+.PHONY : test_complexity/fast
+
 examples/main.obj: examples/main.cpp.obj
 .PHONY : examples/main.obj
 
@@ -152,12 +175,37 @@ examples/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chronosaur.dir\build.make CMakeFiles/chronosaur.dir/examples/main.cpp.s
 .PHONY : examples/main.cpp.s
 
+examples/test_complexity.obj: examples/test_complexity.cpp.obj
+.PHONY : examples/test_complexity.obj
+
+# target to build an object file
+examples/test_complexity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/examples/test_complexity.cpp.obj
+.PHONY : examples/test_complexity.cpp.obj
+
+examples/test_complexity.i: examples/test_complexity.cpp.i
+.PHONY : examples/test_complexity.i
+
+# target to preprocess a source file
+examples/test_complexity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/examples/test_complexity.cpp.i
+.PHONY : examples/test_complexity.cpp.i
+
+examples/test_complexity.s: examples/test_complexity.cpp.s
+.PHONY : examples/test_complexity.s
+
+# target to generate assembly for a file
+examples/test_complexity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/examples/test_complexity.cpp.s
+.PHONY : examples/test_complexity.cpp.s
+
 src/ChronoTimer.obj: src/ChronoTimer.cpp.obj
 .PHONY : src/ChronoTimer.obj
 
 # target to build an object file
 src/ChronoTimer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chronosaur.dir\build.make CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/src/ChronoTimer.cpp.obj
 .PHONY : src/ChronoTimer.cpp.obj
 
 src/ChronoTimer.i: src/ChronoTimer.cpp.i
@@ -166,6 +214,7 @@ src/ChronoTimer.i: src/ChronoTimer.cpp.i
 # target to preprocess a source file
 src/ChronoTimer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chronosaur.dir\build.make CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/src/ChronoTimer.cpp.i
 .PHONY : src/ChronoTimer.cpp.i
 
 src/ChronoTimer.s: src/ChronoTimer.cpp.s
@@ -174,6 +223,7 @@ src/ChronoTimer.s: src/ChronoTimer.cpp.s
 # target to generate assembly for a file
 src/ChronoTimer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chronosaur.dir\build.make CMakeFiles/chronosaur.dir/src/ChronoTimer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_complexity.dir\build.make CMakeFiles/test_complexity.dir/src/ChronoTimer.cpp.s
 .PHONY : src/ChronoTimer.cpp.s
 
 # Help Target
@@ -184,10 +234,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... chronosaur
+	@echo ... test_complexity
 	@echo ... examples/main.obj
 	@echo ... examples/main.i
 	@echo ... examples/main.s
+	@echo ... examples/test_complexity.obj
+	@echo ... examples/test_complexity.i
+	@echo ... examples/test_complexity.s
 	@echo ... src/ChronoTimer.obj
 	@echo ... src/ChronoTimer.i
 	@echo ... src/ChronoTimer.s
